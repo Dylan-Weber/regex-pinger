@@ -1,6 +1,8 @@
 # Discord Regex Pinger 
 
-A simple Discord bot which lets you ping users and roles through regular expressino matching!
+A simple Discord bot which lets you ping users and roles through regular expression matching!
+
+Any user or role with a display name of the form /<regex>/ 
 
 For example: A user with the display name "/foo|bar/" will be pinged by either "@foo" or "@bar". 
 
