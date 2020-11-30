@@ -2,7 +2,7 @@
 
 A simple Discord bot which lets you ping users and roles through regular expression matching!
 
-Any user or role with a display name of the form /<regex>/ 
+Any user or role with a display name in the form /`<regex`>/ will be pinged when a user sends a message including an @ symbol followed by any string that matches the regular expression.
 
 For example: A user with the display name "/foo|bar/" will be pinged by either "@foo" or "@bar". 
 
