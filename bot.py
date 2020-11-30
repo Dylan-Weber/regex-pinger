@@ -5,10 +5,9 @@ import regex as re
 
 
 class RegexClient(discord.Client):
-    # This is required to retrieve member information. Unfortunately, it freezes the bot. Oh well :/
-    # def __init__(self):
-    #     member_intent = Intents(members=True)
-    #     super().__init__(intents=member_intent)
+    def __init__(self):
+        member_intent = Intents(guilds=True, members=True, emojis=True, messages=True)
+        super().__init__(intents=member_intent)
 
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
